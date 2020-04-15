@@ -21,7 +21,7 @@ window.addEventListener('load',()=>{
     renderer.setClearColor( 0x000000, 0 ); //Le agregamos color blanco
     renderer.setSize(canvas.offsetWidth,canvas.offsetHeight); //La compensación de la cámara
 
-    let camera_control = new THREE.OrbitControls( camera,renderer.domElement); //Asignamos el manejo de la función OrbitControls
+    //let camera_control = new THREE.OrbitControls( camera,renderer.domElement); //Asignamos el manejo de la función OrbitControls
     scene.add(snake.body[0]);//Agregamos cabeza de snake a la escena            //Para movernos en torno al espacio  
     scene.add(apple.object); //Agregamos la manzana 
     window.addCellsToScene(cell); //Y agregamos las celdas
